@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="angular.min.js"></script>
+        <script src="meuApp.js"></script>
+        <script src="meuControlador.js"></script>
+        <title>Página 20</title>
+    </head>
+
+    <body>
+        <h1>Tabela do Brasileirão 2022</h1>
+
+        <div ng-app="meuApp" ng-controller="controladorTabela">
+            <table border>
+                <tr>
+                    <th>POS</th>
+                    <th>CLUBE</th>
+                    <th>PTS</th>
+                </tr>
+
+                <tr ng-repeat="t in times">
+                    <td>{{ t.pos }}</td>
+                    <td>{{ t.time }}</td>
+                    <td>{{ t.pts }}</td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>

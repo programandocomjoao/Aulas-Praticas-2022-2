@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="angular.min.js"></script>
+        <script src="meuApp.js"></script>
+        <title>Página 18</title>
+    </head>
+
+    <body>
+        <h1>Criação de Diretivas</h1>
+
+        <div ng-app="meuApp">
+            <h2 texto></h2>
+            <texto></texto>
+        </div>
+
+        <script>
+            app.directive("texto",
+                function() {
+                    return {
+                        template : 'Aprender AngularJS é construir o futuro!'
+                    }
+                }
+            );
+        </script>
+    </body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="angular.min.js"></script>
+        <script src="meuApp.js"></script>
+        <script src="meuControlador.js"></script>
+        <title>Página 19</title>
+    </head>
+
+    <body>
+        <h1>G5 do Brasileirão 2022</h1>
+
+        <div ng-app="meuApp" ng-controller="controladorTime">
+            <ol>
+                <li ng-repeat="t in times">{{ t }}</li>
+            </ol>
+        </div>
+    </body>
+</html>
