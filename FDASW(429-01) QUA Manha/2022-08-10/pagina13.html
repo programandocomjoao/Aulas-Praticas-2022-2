@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="angular.min.js"></script>
+        <title>Página 13</title>
+    </head>
+
+    <body>
+        <h1>Expressões de Array</h1>
+
+        <div ng-app="" ng-init="idade=[17, 23, 26, 38, 42]">
+            <p>A 1ª idade é {{ idade[0] }}</p>
+            <p>A 2ª idade é {{ idade[1] }}</p>
+            <p>A 3ª idade é {{ idade[2] }}</p>
+            <p>A 4ª idade é {{ idade[3] }}</p>
+            <p>A 5ª idade é {{ idade[4] }}</p>
+            <hr>
+            <p>A 1ª idade é <span ng-bind="idade[0]"></span></p>
+            <p>A 2ª idade é <span ng-bind="idade[1]"></span></p>
+            <p>A 3ª idade é <span ng-bind="idade[2]"></span></p>
+            <p>A 4ª idade é <span ng-bind="idade[3]"></span></p>
+            <p>A 5ª idade é <span ng-bind="idade[4]"></span></p>
+        </div>
+    </body>
+</html>
