@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="angular.min.js"></script>
+        <script src="meuApp.js"></script>
+        <script src="meuControlador.js"></script>
+        <title>Página 22</title>
+    </head>
+
+    <body>
+        <h1>Vinculação Two-Way</h1>
+
+        <div ng-app="meuApp" ng-controller="meuControlador">
+            <form>
+                <p><label for="nome">Nome:</label>
+                <input type="text" id="nome" ng-model="nome">
+                </p>
+
+                <p><label for="idade">Idade:</label>
+                <input type="number" id="idade" min="0" max="120" ng-model="idade">
+                </p>
+
+                <p><label for="peso">Peso:</label>
+                <input type="number" id="peso" ng-model="peso">
+                </p>
+
+                <p><label for="altura">Altura:</label>
+                <input type="number" id="altura" ng-model="altura">
+                </p>
+
+                <p><label for="sexo">Sexo:</label>
+                <select id="sexo" ng-model="sexo">
+                    <option value="">Selecione o Sexo</option>
+                    <option value="F">Feminino</option>
+                    <option value="M">Masculino</option>
+                </select>
+                </p>
+            </form>
+            
+            <hr>
+
+            <p>O nome é {{ nome }}</p>
+            <p>A idade é {{ idade }}</p>
+            <p>O peso é {{ peso }}Kg</p>
+            <p>A altura é {{ altura }}m</p>
+            <p>O sexo é {{ sexo }}</p>
+        </div>
+    </body>
+</html>

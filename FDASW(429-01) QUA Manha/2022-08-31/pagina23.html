@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="angular.min.js"></script>
+        <title>Página 23</title>
+    </head>
+
+    <body>
+        <h1>Validação de Entrada do Usuário</h1>
+
+        <div ng-app="" ng-init="endereco=' '">
+            <form name="form">
+                <p><label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" ng-model="endereco">
+                <span ng-show="form.email.$error.email">Não é um endereco de e-mail válido!</span>
+                <span ng-show="!form.email.$error.email">É um endereco de e-mail válido!</span>
+                </p>
+            </form>
+        </div>
+    </body>
+</html>
