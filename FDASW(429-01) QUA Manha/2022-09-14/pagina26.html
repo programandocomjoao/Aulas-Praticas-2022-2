@@ -1,1 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="angular.min.js"></script>
+    <script src="meuApp.js"></script>
+    <script src="meuControlador.js"></script>
+    <title>Página 26</title>
+  </head>
 
+  <body>
+    <h1>Diretiva ng-bind</h1>
+
+    <div ng-app="meuApp" ng-controller="meuControlador">
+      <table border>
+        <tr>
+          <th>Nome</th>
+          <th>Idade</th>
+          <th>Peso</th>
+          <th>Altura</th>
+          <th>Sexo</th>
+        </tr>
+
+        <tr>
+          <td ng-bind="nome"></td>
+          <td ng-bind="idade"></td>
+          <td ng-bind="peso"></td>
+          <td ng-bind="altura"></td>
+          <td ng-bind="sexo"></td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>

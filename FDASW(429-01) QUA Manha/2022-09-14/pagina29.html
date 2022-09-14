@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="angular.min.js"></script>
+    <script src="meuApp.js"></script>
+    <script src="meuControlador.js"></script>
+    <title>Página 29</title>
+  </head>
+
+  <body ng-app="meuApp">
+    <h1>Escopo Raiz AngularJS</h1>
+
+    <p>A melhor linguagem do mundo é {{ linguagem }}</p>
+    <p>A segunda melhor linguagem do mundo é {{ linguagem2 }}</p>
+
+    <h1>Escopo AngularJS</h1>
+
+    <div ng-controller="controladorLinguagem">
+      <p>A melhor linguagem do mundo é {{ linguagem }}</p>
+      <p>A segunda melhor linguagem do mundo é {{ linguagem2 }}</p>
+      <p ng-bind="msg"></p>
+    </div>
+  </body>
+</html>
